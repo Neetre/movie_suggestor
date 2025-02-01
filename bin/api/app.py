@@ -7,10 +7,11 @@ import pandas as pd
 app = flask.Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:8010"}})
 
+'''
 @app.route('/')
 def home():
     return render_template('index.html')
-
+'''
 
 @app.route('/similar', methods=['POST'])
 def similar():
